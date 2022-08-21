@@ -26,27 +26,27 @@ export const cancelCompleted = () => {
   };
 };
 
-export const deleted = (taskId) => {
+export const deleted = (todoId) => {
   return {
     type: DELETED,
-    payload: taskId,
+    payload: todoId,
   };
 };
 
-export const toggled = (taskId) => {
+export const toggled = (todoId) => {
   return {
     type: TOGGLED,
-    payload: taskId,
+    payload: todoId,
   };
 };
 
-export const colorSelected = (taskId,color) => {
+export const colorSelected = (todoId,color) => {
   return {
     type: COLORSELECTED,
     payload: {
-        // taskId : taskId,
+        // todoId : taskId,
         // color : color
-        taskId,
+        todoId,
         color
     }
   };
