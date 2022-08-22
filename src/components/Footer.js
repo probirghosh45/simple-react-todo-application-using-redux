@@ -32,12 +32,6 @@ const Footer = () => {
     <div className="mt-4 flex justify-between text-xs text-gray-500">
       <p>{` ${numberOfTodos(todosRemaining)} left`}</p>
       <ul className="flex space-x-1 items-center text-xs">
-        {/* <li
-          className={`cursor-pointer ${status === "All" && "font-bold"}`}
-          onClick={() => handleStatusChange("All")}
-        >
-          All
-        </li> */}
                   <li
                     className={`cursor-pointer ${
                         status === "All" && "font-bold"
