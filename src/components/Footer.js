@@ -1,9 +1,28 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 const Footer = () => {
+
+  const todos = useSelector(state=>state.todos)
+  const todosRemaining = todos.filter(todos => !todos.completed).length
+  // console.log(todosRemaining);
+
+  const numberOfTodos = (no_of_todos) =>{
+    switch (no_of_todos) {
+      case 0:
+        return "No task" ;
+        case 1:
+          return "1 task" ;
+        
+      default:
+       return `${no_of_todos} task` 
+    }
+  }
+
+
   return (
     <div class="mt-4 flex justify-between text-xs text-gray-500">
-      <p>2 tasks left</p>
+      <p>{` ${numberOfTodos(todosRemaining)} left`}</p>
       <ul class="flex space-x-1 items-center text-xs">
         <li class="cursor-pointer font-bold">All</li>
         <li>|</li>
