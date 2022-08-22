@@ -42,7 +42,7 @@ const Footer = () => {
                     className={`cursor-pointer ${
                         status === "All" && "font-bold"
                     }`}
-                    onClick={() => handleStatusChange("All")}
+                    onClick={() => handleStatusChange("All")} 
                 >
                     All
                 </li>
