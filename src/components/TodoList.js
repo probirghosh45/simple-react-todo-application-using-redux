@@ -24,7 +24,7 @@ const TodoList = () => {
           if(colors.length > 0 ){
              return colors.includes(todo?.color)
           }
-          return true; 
+          return true;  
         })
         .map((todo) => (
           <Todo todo={todo} key={todo.id} />
