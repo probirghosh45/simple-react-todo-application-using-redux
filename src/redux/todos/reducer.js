@@ -1,7 +1,7 @@
 import {
   ADDED,
   ALLCOMPLETED,
-  CANCELCOMPLETED,
+  CLEARCOMPLETED,
   COLORSELECTED,
   DELETED,
   TOGGLED,
@@ -33,7 +33,7 @@ const reducer = (state = initialState, action) => {
         };
       });
 
-    case CANCELCOMPLETED:
+    case CLEARCOMPLETED:
       return state.filter((todo) => !todo.completed);
 
     case TOGGLED:

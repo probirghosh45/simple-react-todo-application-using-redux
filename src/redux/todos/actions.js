@@ -1,7 +1,7 @@
 import {
   ADDED,
   ALLCOMPLETED,
-  CANCELCOMPLETED,
+  CLEARCOMPLETED,
   COLORSELECTED,
   DELETED,
   TOGGLED,
@@ -20,9 +20,9 @@ export const allCompleted = () => {
   };
 };
 
-export const cancelCompleted = () => {
+export const clearCompleted = () => {
   return {
-    type: CANCELCOMPLETED,
+    type: CLEARCOMPLETED,
   };
 };
 
