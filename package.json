@@ -1,0 +1,14 @@
+{
+    "name": "simple-node-with-redux-server",
+    "description": "simple-node-with-redux-server",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "start": "json-server --watch db_todos.json --no-cors true --port 4500"
+    },
+    "dependencies": {
+        "json-server": "^0.17.0"
+    },
+    "keywords": [],
+    "author": "Probir Ghosh"
+}
