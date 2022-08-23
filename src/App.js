@@ -15,7 +15,7 @@ function App() {
           <hr class="mt-4" />
           <TodoList />
           <hr class="mt-4" />
-          <Footer />
+          <Footer /> 
         </div>
       </div>
     </Provider>
